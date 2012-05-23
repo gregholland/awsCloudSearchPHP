@@ -62,11 +62,15 @@ class awsCloudSearch {
 
     public function search($term, $params = array())
     {
-        if (sizeof($params) == 0) {
+
+        if ($term == null) {
+      		return $this->call($this->search_endpoint ."/search?".urldecode(http_build_query($params)), "GET", array());  
+        } 
+        else if (sizeof($params) == 0) {
             return $this->call($this->search_endpoint ."/search?q=".urlencode($term), "GET", array());
         }
         else {
-            return $this->call($this->search_endpoint ."/search?q=".urlencode($term)."&".http_build_query($params), "GET", array());
+            return $this->call($this->search_endpoint ."/search?q=".urlencode($term)."&".urldecode(http_build_query($params)), "GET", array());
         }
     }
 	
