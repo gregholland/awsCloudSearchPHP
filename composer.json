@@ -1,0 +1,20 @@
+{
+    "name": "gregholland/cloudsearch-wrapper",
+    "type": "symfony-bundle",
+    "description": "Cloudsearch Wrapper for Symfony2",
+    "keywords": [cloudsearch", "symfony"],
+    "homepage": "https://github.com/gregavola/awsCloudSearchPHP",
+    "license": "MIT",
+    "authors": [{
+        "name": "gregavola",
+    }],
+    "require": {
+        "php": ">=5.3.3",
+        "symfony/framework-bundle": "2.1.*",
+        "symfony/yaml": "2.1.*"
+    },
+    "autoload": {
+        "psr-0": { "awsCloudSearchWrapper\\Bundle\\CloudSearch: "" }
+    },
+    "target-dir": "awsCloudSearchWrapper/Bundle/CloudSearchBundle"
+}
