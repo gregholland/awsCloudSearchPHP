@@ -1,5 +1,5 @@
 {
- 	"name":"CloudsearchWrapper",
+ 	"name":"gregholland/CloudsearchWrapper",
     "require": {
         "php": ">=5.3.3"
     }
